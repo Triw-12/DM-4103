@@ -32,7 +32,7 @@ En calculant la perte uniquement sur les nœuds étiquetés, elle ignore complè
 Entrainement : 100 epochs, ce qui est suffisant pour observer une convergence raisonnable sans surajuster, surtout avec un modèle simple.
 Puis on fait 70% pour l'entrainement, 10% pour la validation et 20% pour le test, pour avoir un bon entraînement tout en gardant une part significative pour évaluer la performance finale.
 
-Pour les résultats : `gender` est le plus facilement retrouvé (accuracy ≈ 0,54), `dorm` et surtout `major_index` sont beaucoup plus difficiles (accuracy ≈ 0,24 pour `dorm`, ≈ 0,215 pour `major_index`, MAE élevée pour ces derniers). Raisons probables : `gender` a peu de classes (normalement binaire) et une corrélation locale forte, alors que `major_index` a une cardinalité élevée et beaucoup de bruit. Le modèle utilisé est vtrès simpliste, d'où le fait que les résultats ne sont vraiment pas assez précis (même s'il y a une amélioration par rapport au hasard). C'est peut-être dû à mon implémentation et des améliorations sont sûrement possibles.
+Pour les résultats : `gender` est le plus facilement retrouvé (accuracy ≈ 0,54), `dorm` et surtout `major_index` sont beaucoup plus difficiles (accuracy ≈ 0,24 pour `dorm`, ≈ 0,215 pour `major_index`, MAE élevée pour ces derniers). Raisons probables : `gender` a peu de classes (normalement binaire) et une corrélation locale forte, alors que `major_index` a une cardinalité élevée et beaucoup de bruit. Le modèle utilisé est très simpliste, d'où le fait que les résultats ne sont vraiment pas assez précis (même s'il y a une amélioration par rapport au hasard). C'est peut-être dû à mon implémentation et des améliorations sont sûrement possibles.
 
 ## Question 6
 
